@@ -73,7 +73,7 @@ class FormFragment : Fragment() {
 
     private fun validNome(): String? {
         val nomeText = binding.editNome.text.toString()
-        if (nomeText == "" || nomeText.length < 3 || nomeText.length > 20) {
+        if (nomeText == "" || nomeText.length < 3 || nomeText.length > 300) {
 
             return "Digite um nome válido"
         }
@@ -181,7 +181,7 @@ class FormFragment : Fragment() {
         var message = ""
 
         if (binding.nomeContainer.helperText != null) {
-            message += "\n\nEmail: " + binding.nomeContainer.helperText
+            message += "\n\nNome: " + binding.nomeContainer.helperText
         }
 
         if (binding.precoContainer.helperText != null) {
@@ -218,7 +218,7 @@ class FormFragment : Fragment() {
         val categoria = Categoria(categoriaSelecionada, " ", null)
 
 
-        var message = "Email:" + binding.editNome.text
+        var message = "Nome:" + binding.editNome.text
         message += "\nPreço:" + binding.editPreco.text
         message += "\nEstoque:" + binding.editEstoque.text
         message += "\nDescrição:" + binding.editDescricao.text

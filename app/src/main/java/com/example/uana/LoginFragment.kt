@@ -28,8 +28,8 @@ class LoginFragment : Fragment() {
         binding.buttonEntrar.setOnClickListener {
 
             if (textEmailAddress.text.toString()
-                    .equals("admin@gmail.com") && textPassword.text.toString()
-                    .equals("admin")
+                    .equals("admin@hotmail.com") && textPassword.text.toString()
+                    .equals("Admin@")
             ) {
 
                 Toast.makeText(context, "Seja Bem-Vindo!", Toast.LENGTH_SHORT).show()
